@@ -1,0 +1,43 @@
+{
+  "name": "gitngo",
+  "displayName": "Git'n'Go",
+  "description": "A minimal VS Code extension to help with Git commit messages",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitngo.commitHelper",
+        "title": "Commit Helper"
+      },
+      {
+        "command": "gitngo.formatCommit",
+        "title": "Format Commit Message"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "pretest": "npm run compile",
+    "package": "vsce package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.2",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-electron": "^2.5.2",
+    "@vscode/vsce": "^3.3.2",
+    "typescript": "^5.8.3",
+    "vscode": "^1.1.37"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
+  }
+}
