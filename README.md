@@ -73,6 +73,12 @@ Git'n'Go is a tool that helps developers write better commit messages by automat
    npm run dev
    ```
 
+   For production deployment:
+   ```
+   npm run build
+   npm run server
+   ```
+
 #### VSCode Extension Installation
 
 1. Navigate to the VSCode extension directory:
